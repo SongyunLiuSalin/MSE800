@@ -1,0 +1,10 @@
+student: address, gender
+enrollment: has paid
+
+Student(many)--Enrollment(1)
+Student(many)--Lecture(many)
+Enrollment(1)--Lecture(many)
+Lecturer(1)--Lecture(1)
+Lecture(1)--subjects(1)
+Lecturer(1)--subjects(1)
+
