@@ -1,0 +1,32 @@
+┌─────────────────────┐
+│      CUSTOMER       │
+├─────────────────────┤
+│   *customer_id      │
+│    name             │
+│    phone            │
+└──────────┬──────────┘
+           │1
+           │ 
+           │
+           │n
+┌──────────▼──────────┐
+│     TRANSACTION     │
+├─────────────────────┤
+│   *transaction_id   │
+│    customer_id      │
+│    rate_id          │
+│    rmb_amount       │
+│    nzd_amount       │
+│    transaction_date │
+└──────────┬──────────┘
+           │n
+           │ 
+           │
+           │1
+┌──────────▼──────────┐
+│    EXCHANGE_RATE    │
+├─────────────────────┤
+│   *rate_id          │
+│    rmb_to_nzd       │
+│    rate_date        │
+└─────────────────────┘
